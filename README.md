@@ -12,6 +12,4 @@ https://github.com/vamsiramakrishnan/ora-se-symposium-backend/blob/master/README
 4. Object Storage Read URL ( Used to post images )
 
 
-Line added 1
-Line added 2
-Line added 3
+Line1 added
