@@ -77,7 +77,7 @@ kubernetes-deploy:
     - script:
         name: echo deployment file
         code: | 
-          cat ./k8s-frontend-deployment.yaml
+          cat frontend-deployment.yaml
 #     - kubectl:
 #         server: $KUBE_ENDPOINT
 #         token: $KUBE_USER_TOKEN
@@ -97,7 +97,7 @@ kubernetes-deploy:
         token: $KUBE_USER_TOKEN
         insecure-skip-tls-verify: true
         cwd: $WERCKER_ROOT/.
-        command: -n $K8SNAMESPACE apply -f k8s-frontend-deployment.yaml
+        command: -n $K8SNAMESPACE apply -f frontend-deployment.yaml
   after-steps:
     - install-packages:
         packages: ruby
